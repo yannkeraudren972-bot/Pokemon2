@@ -15,7 +15,7 @@ public class Pokemon0 {
 	public Pokemon0(String nom) {
 		
 		this.nom = nom;
-		this.niveau = r.nextInt(10) + 1;
+		this.niveau = r.nextInt(1, 11);
 		this.hp = this.niveau * 2;
 		this.atk = (this.niveau / 2) + 1;
 		
