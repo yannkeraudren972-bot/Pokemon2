@@ -75,20 +75,21 @@ public abstract class Pokemon {
 		return "Je m'appelle " + this.nom +
 				"\nje suis de niveau " + this.niveau +
 				"\nj'ai " + this.hp + " points de vie \n" +
-				"mon attaque de base est de " + this.atk + "\n";
+				"mon attaque de base est de " + this.atk + "\n" +
+				"je suis de type " + this.type;
 	}
 	
 	
 	
 	private String prefixe() {
-		return "";
+		return "[Pokemon " + this.nom + "] : ";
 	}
 	
 	
 	
 	public void log(String msg) {
 		
-		System.out.println("[Pokemon " + this.nom + "] : " + msg);
+		System.out.println(prefixe() + msg);
 	}
 
 }
