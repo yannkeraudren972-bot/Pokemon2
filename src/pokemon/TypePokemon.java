@@ -2,16 +2,17 @@ package pokemon;
 
 public enum TypePokemon {
 	
-	EAU("eau"),
-	FEU("feu"),
-	PLANTE("plante");
+	EAU("Eau"),
+	FEU("Feu"),
+	PLANTE("Plante");
 	
-	private String name;
+	private final String name;
 	
 	private TypePokemon(String name) {
 		this.name = name;
 	}
 	
+	@Override
 	public String toString() {
 		return this.name;
 	}

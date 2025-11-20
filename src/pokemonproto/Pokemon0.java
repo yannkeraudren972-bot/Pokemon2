@@ -1,4 +1,4 @@
-package pokemon;
+package pokemonproto;
 
 import java.util.Random;
 
